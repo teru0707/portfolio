@@ -40,7 +40,7 @@ p, ul li {
     line-height: 1.6;
 }
 
-h2, h3, h4, h5 {
+h2, h3, h4, h5, h6 {
     color: #2c3e50;
     padding-top: 20px;
     margin-bottom: 10px;
@@ -83,6 +83,11 @@ button:hover {
 /* 強調テキスト */
 strong {
     color: #e74c3c;
+}
+
+/*ちょっとの強調テキスト */
+em {
+    color: rgb(170, 0, 255);
 }
 
 /* フェードインアニメーション */
