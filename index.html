@@ -8,133 +8,49 @@
 </head>
 <body>
     <div class="container">
-        <!-- ヒーローセクション -->
-        <div class="hero">
-            <h1>鳥谷尾晃暉</h1>
-            <p class="subtitle">Teruki Toyao</p>
-            <p class="tagline">大阪公立大学工業高等専門学校 知能情報コース</p>
-        </div>
+        <h1>鳥谷尾晃暉のポートフォリオ</h1>
+        <p>ようこそ！こちらは私のポートフォリオサイトです。</p>
 
-        <!-- 自己紹介 -->
-        <div class="card">
-            <h2>自己紹介</h2>
-            <p style="margin-bottom: 20px;">大阪公立大学工業高等専門学校で学ぶ、プログラミングとサッカーに情熱を注ぐ学生です。</p>
-            
-            <div class="timeline">
-                <div class="timeline-item">
-                    <strong>2023年3月</strong> - 四條畷学園中学校を卒業
-                </div>
-                <div class="timeline-item">
-                    <strong>2023年4月</strong> - 大阪公立大学工業高等専門学校に入学 (サッカー部に入部)
-                </div>
-                <div class="timeline-item">
-                    <strong>2024年4月</strong> - 第2学年知能情報コースに配属 (2I)
-                </div>
-                <div class="timeline-item">
-                    <strong>2024年9月</strong> - U-18サッカー部キャプテンに任命
-                </div>
-            </div>
-            
-            <p style="margin-top: 20px; padding: 15px; background: rgba(102, 126, 234, 0.1); border-radius: 10px; font-weight: 600;">
-                現在、2Iのクラス総代を務めています
-            </p>
-        </div>
+        <h2>自己紹介</h2>
+        <p><strong>名前</strong>は<strong>鳥谷尾晃暉</strong>といいます。以下から箇条書きで簡単な私の情報を提示させていただきます。</p>
+        <ul>
+            <li>2023年3月 四條畷学園中学校を卒業</li>
+            <li>2023年4月 大阪公立大学工業高等専門学校に入学 (サッカー部に入部)</li>
+            <li>2024年4月 大阪公立大学工業高等専門学校の第2学年知能情報コースに配属 (2I)</li>
+            <li>2024年9月 U-18サッカー部キャプテンに任命</li>
+        </ul>
+        <p>2Iのクラス総代を務めています。</p>
 
-        <!-- プロジェクト -->
-        <div class="card">
-            <h2>プロジェクト</h2>
-            
-            <div class="project">
-                <h4>🎮 じゃんけんゲーム (Python)</h4>
-                <p><strong>制作時期:</strong> プログラミング授業の自由課題</p>
-                <p style="margin: 15px 0;">コンピュータと対戦するじゃんけんゲーム。3ポイント先取で星の描画が表示されるインタラクティブなプログラムです。</p>
-                <p><strong>主な機能:</strong></p>
-                <ul style="margin: 10px 0 15px 20px;">
-                    <li>勝敗判定システム</li>
-                    <li>ポイント管理機能</li>
-                    <li>Google Colabでの星の描画</li>
-                    <li>ゲームリプレイ機能</li>
-                </ul>
-                <button class="btn" onclick="location.href='https://colab.research.google.com/drive/15jfze8Shnuies_qxIkb6ZC0qO6HCVIZ4?usp=sharing'">
-                    コードを見る →
-                </button>
-            </div>
+        <h3><strong>作ったプログラム</strong></h3>
+        <p><strong>プログラミング授業の自由課題で作成したじゃんけんゲーム (ボタンをクリックしてご覧ください)</strong></p>
+        <button onclick="location.href='https://colab.research.google.com/drive/15jfze8Shnuies_qxIkb6ZC0qO6HCVIZ4?usp=sharing'">リンク先へ移動</button>
 
-            <div class="project">
-                <h4>⚽ 猫サッカーゲーム (Unity)</h4>
-                <p><strong>制作時期:</strong> 2024年12月～2025年1月</p>
-                <p style="margin: 15px 0;">2024年高専祭で発表したUnityゲーム。猫のキャラクターを操作して対戦する2人プレイのサッカーゲームです。</p>
-                <p><strong>ゲームの特徴:</strong></p>
-                <ul style="margin: 10px 0 15px 20px;">
-                    <li>2人対戦型のサッカーゲーム</li>
-                    <li>5点先取制</li>
-                    <li>ボールの速度が徐々に加速</li>
-                    <li>リセット機能搭載</li>
-                </ul>
-                <p style="background: rgba(102, 126, 234, 0.1); padding: 10px; border-radius: 8px; margin: 15px 0;">
-                    <strong>操作方法:</strong><br>
-                    Player1: W(上) / S(下)<br>
-                    Player2: ↑(上) / ↓(下)<br>
-                    R: リセット
-                </p>
+        <p><strong>このプログラムの概要</strong></p>
+        <p>これはコンピュータとじゃんけんをし、勝つと1ポイント加算されますこれはコンピュータとじゃんけんをし、勝つと1ポイント加算されもう一度、あいこだとじゃんけんが終了、負けると-1ポイント加算されもう一度プレイできるプログラムです。はじめにプレイやーのポイントを0からスタートしています。choiceでコンピュータとプレイヤーが選ぶことのできるじゃんけんの選択肢をリスト化しています。def jadgeでプレイヤーとコンピュータの選択を受け取り、結果を返します。この時 ・あいこ：両者の選択肢が同じ場合 ・勝ち：プレイヤーが勝つ選択肢の時 ・負け：プレイヤーが負ける選択肢の時 と定義しています。while points < 3 でプレイヤーのポイントが3未満の間はゲームを続けるようにしています。breakであいこになった場合はゲームを強制的に終了させるようにしています。プレイヤーのポイントが3になったとき、google colabで一筆書きの星が書かれるようにしています。最後に、ゲームオーバーになるのはあいこになったときだけなので、あいこになると「ゲームオーバーです。もう一度挑戦してください。」と表示されるようにしました。</p>
 
-                <div class="gallery">
-                    <div class="gallery-item">
-                        <img src="soccer_2.png" alt="ゲームスタート画面">
-                        <div class="caption">ゲームスタート画面</div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="soccer_1.png" alt="プレイ中の画面">
-                        <div class="caption">ボールが動いている様子</div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="soccer_3.png" alt="得点が入った画面">
-                        <div class="caption">得点シーン</div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="soccer_4.png" alt="勝利画面">
-                        <div class="caption">勝利画面</div>
-                    </div>
-                </div>
+        <h4><strong>2024年高専祭での成果</strong></h4>
+        <p>私たちのグループはUnityを使用し、簡易的なゲームを作成しました。私はこのゲームの内容、ルール説明を書きました。</p>
 
-                <button class="btn" onclick="location.href='https://github.com/teru0707/Gamemake'">
-                    GitHubで見る →
-                </button>
-            </div>
-        </div>
+        <h5><strong>猫とできるサッカーゲーム</strong></h5>
+        <p>サッカーゲームを作成しました。以下にプレイ内容の画像を４枚搭載させていただきます。</p>
+        <p><em>ゲームスタート時の画像</em></p>
+        <img src="soccer_2.png" alt="ゲームスタート時の画像" width="50%" title="ゲームスタート時の画像" />
+        <p><em>ボールが動いているのを確認できる画像</em></p>
+        <img src="soccer_1.png" alt="ボールが動いているのが確認できる画像" width="50%" title="ボールが動いているのが確認できる画像" />
+        <p><em>キャラクターが動き、点数が入ることを確認できる画像</em></p>
+        <img src="soccer_3.png" alt="キャラクターが動き、点数が入ることを確認できる画像" width="50%" title="キャラクターが動き、点数が入ることを確認できる画像" />
+        <p><em>どちらかが5点入れたら画面に○○win!!とでてきてゲームが終わるのを確認できる画像</em></p>
+        <img src="soccer_4.png" alt="どちらかが5点入れたら画面に○○win!!とでてきてゲームが終わるのを確認できる画像" width="50%" title="どちらかが5点入れたら画面に○○win!!とでてきてゲームが終わるのを確認できる画像" />
 
-        <!-- スキル -->
-        <div class="card">
-            <h2>スキル・使用経験</h2>
-            
-            <h3>プログラミング言語</h3>
-            <div class="skills">
-                <span class="skill-badge">Python</span>
-                <span class="skill-badge">C/C++ (Arduino)</span>
-                <span class="skill-badge">Scratch</span>
-            </div>
-
-            <h3>開発ツール・環境</h3>
-            <div class="skills">
-                <span class="skill-badge">Git / GitHub</span>
-                <span class="skill-badge">VSCode</span>
-                <span class="skill-badge">Unity</span>
-                <span class="skill-badge">Google Colab</span>
-            </div>
-
-            <h3>その他の技術</h3>
-            <div class="skills">
-                <span class="skill-badge">Arduino</span>
-                <span class="skill-badge">Raspberry Pi</span>
-                <span class="skill-badge">Ambient</span>
-                <span class="skill-badge">Real VNC</span>
-            </div>
-        </div>
-
-        <!-- フッター -->
-        <div class="footer">
-            <p>© 2025 鳥谷尾晃暉 Portfolio</p>
-        </div>
+        <p><strong>概要</strong></p>
+        <P>上記の画像にもある通り、これは猫と猫が戦うサッカーゲームです。<br />左側が<strong>player1</strong>、右側が<strong>player2</strong>です。<br />ルールはボールが移動するので猫をボールに向かって上下に移動させ、猫にボールを当てます。するとボールが跳ね返り対戦相手の猫の方に移動するので跳ね返しあって戦います。<br />Rキーを押すことでバグが起きた時などにリセットできます。もしボールがゴール横に出たらボールが再び中央に戻りリスタートされます。<br />このゲームはどちらかが５点先取することで画面が最後の画像のように切り替わりゲームが終了します。<br />①player1はWキーで上に、Sキーで下に移動できます。<br />②player2は↑キーで上に、↓キーで下に移動できます。<br />このゲームはplayerにボールがあたるか壁にボールがあたると徐々にボールが速くなっていきます。</P>
+        <p><strong>制作時期2024年12月～2025年1月 (コマンドはボタンをクリックしてご覧ください)</strong></p>
+        <button onclick="location.href='https://github.com/teru0707/Gamemake'">リンク先へ移動</button>
+        <h6>使用経験のあるプログラミング言語やソフトウェア</h6>
+        <p><strong>Python, Git/GitHub, VSCode</strong> - 学校の授業で使用しています。</p>
+        <p><strong>Arduino</strong> - 2Iの前期科目にて使用していました。</p>
+        <p><strong>Scratch</strong> - 小学校、中学校で使用経験あり。</p>
+        <p><strong>Ambient, Real VNC</strong> - 実験実習にて使用、Raspberry Piの遠隔操作にも使用しています。</p>
     </div>
 </body>
 </html>
