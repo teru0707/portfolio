@@ -3,54 +3,439 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>鳥谷尾晃暉のポートフォリオ</title>
+    <title>鳥谷尾晃暉 - Portfolio</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <div class="container">
-        <h1>鳥谷尾晃暉のポートフォリオ</h1>
-        <p>ようこそ！こちらは私のポートフォリオサイトです。</p>
+    <!-- 背景のパーティクルアニメーション -->
+    <div class="particles-container" id="particles"></div>
 
-        <h2>自己紹介</h2>
-        <p><strong>名前</strong>は<strong>鳥谷尾晃暉</strong>といいます。以下から箇条書きで簡単な私の情報を提示させていただきます。</p>
-        <ul>
-            <li>2023年3月 四條畷学園中学校を卒業</li>
-            <li>2023年4月 大阪公立大学工業高等専門学校に入学 (サッカー部に入部)</li>
-            <li>2024年4月 大阪公立大学工業高等専門学校の第2学年知能情報コースに配属 (2I)</li>
-            <li>2024年9月 U-18サッカー部キャプテンに任命</li>
-        </ul>
-        <p>2Iのクラス総代を務めています。</p>
+    <!-- ナビゲーションバー -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">Teruki Toyao</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-        <h3><strong>作ったプログラム</strong></h3>
-        <p><strong>プログラミング授業の自由課題で作成したじゃんけんゲーム (ボタンをクリックしてご覧ください)</strong></p>
-        <button onclick="location.href='https://colab.research.google.com/drive/15jfze8Shnuies_qxIkb6ZC0qO6HCVIZ4?usp=sharing'">リンク先へ移動</button>
+    <!-- ヒーローセクション -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="glitch" data-text="鳥谷尾晃暉">鳥谷尾晃暉</h1>
+                <p class="typing-text">Student Developer & Soccer Captain</p>
+                <div class="hero-tags">
+                    <span class="tag">💻 Programming</span>
+                    <span class="tag">⚽ Soccer</span>
+                    <span class="tag">🎮 Game Dev</span>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn-primary">
+                        <span>View Projects</span>
+                        <div class="btn-glow"></div>
+                    </a>
+                    <a href="#contact" class="btn-secondary">
+                        <span>Contact Me</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card card-1">
+                    <div class="card-content">
+                        <span class="emoji">🏫</span>
+                        <p>大阪公立大学<br>工業高等専門学校</p>
+                    </div>
+                </div>
+                <div class="floating-card card-2">
+                    <div class="card-content">
+                        <span class="emoji">👨‍💻</span>
+                        <p>知能情報コース<br>2I クラス総代</p>
+                    </div>
+                </div>
+                <div class="floating-card card-3">
+                    <div class="card-content">
+                        <span class="emoji">⚽</span>
+                        <p>U-18サッカー部<br>キャプテン</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
 
-        <p><strong>このプログラムの概要</strong></p>
-        <p>これはコンピュータとじゃんけんをし、勝つと1ポイント加算されますこれはコンピュータとじゃんけんをし、勝つと1ポイント加算されもう一度、あいこだとじゃんけんが終了、負けると-1ポイント加算されもう一度プレイできるプログラムです。はじめにプレイやーのポイントを0からスタートしています。choiceでコンピュータとプレイヤーが選ぶことのできるじゃんけんの選択肢をリスト化しています。def jadgeでプレイヤーとコンピュータの選択を受け取り、結果を返します。この時 ・あいこ：両者の選択肢が同じ場合 ・勝ち：プレイヤーが勝つ選択肢の時 ・負け：プレイヤーが負ける選択肢の時 と定義しています。while points < 3 でプレイヤーのポイントが3未満の間はゲームを続けるようにしています。breakであいこになった場合はゲームを強制的に終了させるようにしています。プレイヤーのポイントが3になったとき、google colabで一筆書きの星が書かれるようにしています。最後に、ゲームオーバーになるのはあいこになったときだけなので、あいこになると「ゲームオーバーです。もう一度挑戦してください。」と表示されるようにしました。</p>
+    <!-- About セクション -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">01.</span>
+                About Me
+            </h2>
+            
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="intro-text">
+                        大阪公立大学工業高等専門学校で学ぶ、プログラミングとサッカーに情熱を注ぐ学生です。
+                        技術と創造性を融合させ、実用的なアプリケーションの開発に取り組んでいます。
+                    </p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">2024</div>
+                            <div class="stat-label">Current Year</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Technologies</div>
+                        </div>
+                    </div>
+                </div>
 
-        <h4><strong>2024年高専祭での成果</strong></h4>
-        <p>私たちのグループはUnityを使用し、簡易的なゲームを作成しました。私はこのゲームの内容、ルール説明を書きました。</p>
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+                    <div class="timeline-item" data-year="2023.03">
+                        <div class="timeline-content">
+                            <h3>四條畷学園中学校 卒業</h3>
+                            <p>中学校生活を終え、新たなステージへ</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-year="2023.04">
+                        <div class="timeline-content">
+                            <h3>大阪公立大学工業高等専門学校 入学</h3>
+                            <p>サッカー部に入部し、技術と体力の両立を目指す</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-year="2024.04">
+                        <div class="timeline-content">
+                            <h3>知能情報コース配属 (2I)</h3>
+                            <p>専門的なプログラミング学習がスタート</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-year="2024.09">
+                        <div class="timeline-content">
+                            <h3>U-18サッカー部 キャプテン就任</h3>
+                            <p>リーダーシップを発揮し、チームを牽引</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <h5><strong>猫とできるサッカーゲーム</strong></h5>
-        <p>サッカーゲームを作成しました。以下にプレイ内容の画像を４枚搭載させていただきます。</p>
-        <p><em>ゲームスタート時の画像</em></p>
-        <img src="soccer_2.png" alt="ゲームスタート時の画像" width="50%" title="ゲームスタート時の画像" />
-        <p><em>ボールが動いているのを確認できる画像</em></p>
-        <img src="soccer_1.png" alt="ボールが動いているのが確認できる画像" width="50%" title="ボールが動いているのが確認できる画像" />
-        <p><em>キャラクターが動き、点数が入ることを確認できる画像</em></p>
-        <img src="soccer_3.png" alt="キャラクターが動き、点数が入ることを確認できる画像" width="50%" title="キャラクターが動き、点数が入ることを確認できる画像" />
-        <p><em>どちらかが5点入れたら画面に○○win!!とでてきてゲームが終わるのを確認できる画像</em></p>
-        <img src="soccer_4.png" alt="どちらかが5点入れたら画面に○○win!!とでてきてゲームが終わるのを確認できる画像" width="50%" title="どちらかが5点入れたら画面に○○win!!とでてきてゲームが終わるのを確認できる画像" />
+            <div class="achievement-badge">
+                <div class="badge-icon">🏆</div>
+                <div class="badge-text">
+                    <h4>2I クラス総代</h4>
+                    <p>学業とリーダーシップの両立</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <p><strong>概要</strong></p>
-        <P>上記の画像にもある通り、これは猫と猫が戦うサッカーゲームです。<br />左側が<strong>player1</strong>、右側が<strong>player2</strong>です。<br />ルールはボールが移動するので猫をボールに向かって上下に移動させ、猫にボールを当てます。するとボールが跳ね返り対戦相手の猫の方に移動するので跳ね返しあって戦います。<br />Rキーを押すことでバグが起きた時などにリセットできます。もしボールがゴール横に出たらボールが再び中央に戻りリスタートされます。<br />このゲームはどちらかが５点先取することで画面が最後の画像のように切り替わりゲームが終了します。<br />①player1はWキーで上に、Sキーで下に移動できます。<br />②player2は↑キーで上に、↓キーで下に移動できます。<br />このゲームはplayerにボールがあたるか壁にボールがあたると徐々にボールが速くなっていきます。</P>
-        <p><strong>制作時期2024年12月～2025年1月 (コマンドはボタンをクリックしてご覧ください)</strong></p>
-        <button onclick="location.href='https://github.com/teru0707/Gamemake'">リンク先へ移動</button>
-        <h6>使用経験のあるプログラミング言語やソフトウェア</h6>
-        <p><strong>Python, Git/GitHub, VSCode</strong> - 学校の授業で使用しています。</p>
-        <p><strong>Arduino</strong> - 2Iの前期科目にて使用していました。</p>
-        <p><strong>Scratch</strong> - 小学校、中学校で使用経験あり。</p>
-        <p><strong>Ambient, Real VNC</strong> - 実験実習にて使用、Raspberry Piの遠隔操作にも使用しています。</p>
-    </div>
+    <!-- Projects セクション -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">02.</span>
+                Featured Projects
+            </h2>
+
+            <div class="projects-grid">
+                <!-- プロジェクト1: じゃんけんゲーム -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <div class="project-overlay">
+                            <span class="project-tech">Python</span>
+                            <span class="project-tech">Google Colab</span>
+                        </div>
+                        <div class="project-icon">🎮</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>じゃんけんゲーム</h3>
+                        <p class="project-description">
+                            コンピュータと対戦するインタラクティブなじゃんけんゲーム。
+                            ポイントシステムと星の描画機能を実装。
+                        </p>
+                        <div class="project-features">
+                            <span class="feature">✓ 勝敗判定システム</span>
+                            <span class="feature">✓ ポイント管理</span>
+                            <span class="feature">✓ ビジュアル描画</span>
+                            <span class="feature">✓ リプレイ機能</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://colab.research.google.com/drive/15jfze8Shnuies_qxIkb6ZC0qO6HCVIZ4?usp=sharing" 
+                               class="project-link" target="_blank">
+                                <span>View Code</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- プロジェクト2: 猫サッカーゲーム -->
+                <div class="project-card featured">
+                    <div class="featured-badge">Featured Project</div>
+                    <div class="project-content-full">
+                        <div class="project-info">
+                            <h3>⚽ 猫サッカーゲーム</h3>
+                            <p class="project-description-large">
+                                2024年高専祭で発表したUnityベースの2人対戦型サッカーゲーム。
+                                猫のキャラクターを操作し、リアルタイムで対戦できる本格的なゲームです。
+                                ボールの物理演算、スコアシステム、勝敗判定など、多数の機能を実装しました。
+                            </p>
+                            
+                            <div class="game-controls">
+                                <h4>🎮 操作方法</h4>
+                                <div class="controls-grid">
+                                    <div class="control-item">
+                                        <span class="control-key">Player 1</span>
+                                        <span class="control-desc">W / S で上下移動</span>
+                                    </div>
+                                    <div class="control-item">
+                                        <span class="control-key">Player 2</span>
+                                        <span class="control-desc">↑ / ↓ で上下移動</span>
+                                    </div>
+                                    <div class="control-item">
+                                        <span class="control-key">Reset</span>
+                                        <span class="control-desc">R キーでリセット</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-tech-stack">
+                                <span class="tech-badge">Unity</span>
+                                <span class="tech-badge">C#</span>
+                                <span class="tech-badge">Git</span>
+                                <span class="tech-badge">GitHub</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="https://github.com/teru0707/Gamemake" 
+                                   class="project-link primary" target="_blank">
+                                    <span>View on GitHub</span>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-gallery">
+                            <div class="gallery-grid">
+                                <div class="gallery-item-large">
+                                    <img src="soccer_2.png" alt="ゲームスタート画面">
+                                    <div class="gallery-caption">ゲームスタート画面</div>
+                                </div>
+                                <div class="gallery-item-small">
+                                    <img src="soccer_1.png" alt="プレイ中">
+                                    <div class="gallery-caption">ボール移動</div>
+                                </div>
+                                <div class="gallery-item-small">
+                                    <img src="soccer_3.png" alt="得点シーン">
+                                    <div class="gallery-caption">得点シーン</div>
+                                </div>
+                                <div class="gallery-item-small">
+                                    <img src="soccer_4.png" alt="勝利画面">
+                                    <div class="gallery-caption">勝利画面</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills セクション -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">03.</span>
+                Skills & Technologies
+            </h2>
+
+            <div class="skills-container">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <span class="category-icon">💻</span>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">C / C++ (Arduino)</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Scratch</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <span class="category-icon">🛠️</span>
+                        <h3>Development Tools</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Git / GitHub</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">VSCode</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Unity</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <span class="category-icon">⚙️</span>
+                        <h3>Hardware & IoT</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Arduino</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Raspberry Pi</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Ambient / Real VNC</span>
+                                <span class="skill-level">Basic</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-cloud">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Git</span>
+                <span class="tech-tag">Unity</span>
+                <span class="tech-tag">Arduino</span>
+                <span class="tech-tag">VSCode</span>
+                <span class="tech-tag">Raspberry Pi</span>
+                <span class="tech-tag">C/C++</span>
+                <span class="tech-tag">GitHub</span>
+                <span class="tech-tag">Scratch</span>
+                <span class="tech-tag">IoT</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact セクション -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">04.</span>
+                Get In Touch
+            </h2>
+
+            <div class="contact-content">
+                <div class="contact-text">
+                    <h3>プロジェクトやコラボレーションについて</h3>
+                    <p>新しいプロジェクトやアイデアについて、お気軽にご連絡ください。
+                    一緒に何か素晴らしいものを作りましょう！</p>
+                </div>
+
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <h4>Email</h4>
+                        <p>お問い合わせはメールで</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">💼</div>
+                        <h4>GitHub</h4>
+                        <p>プロジェクトをチェック</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">🎓</div>
+                        <h4>School</h4>
+                        <p>大阪公立大学工業高専</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025 鳥谷尾晃暉 (Teru Toriyao) - All Rights Reserved</p>
+            <p class="footer-subtitle">Designed & Built with passion 🚀</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
