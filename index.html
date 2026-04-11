@@ -7,10 +7,8 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <!-- 背景のパーティクルアニメーション -->
     <div class="particles-container" id="particles"></div>
 
-    <!-- ナビゲーションバー -->
     <nav class="navbar">
         <div class="nav-content">
             <div class="logo">Teruki Toyao</div>
@@ -24,7 +22,6 @@
         </div>
     </nav>
 
-    <!-- ヒーローセクション -->
     <section id="home" class="hero-section">
         <div class="hero-content">
             <div class="hero-text">
@@ -73,7 +70,6 @@
         </div>
     </section>
 
-    <!-- About セクション -->
     <section id="about" class="section">
         <div class="container">
             <h2 class="section-title">
@@ -143,7 +139,6 @@
         </div>
     </section>
 
-    <!-- Projects セクション -->
     <section id="projects" class="section projects-section">
         <div class="container">
             <h2 class="section-title">
@@ -152,7 +147,6 @@
             </h2>
 
             <div class="projects-grid">
-                <!-- プロジェクト1: じゃんけんゲーム -->
                 <div class="project-card">
                     <div class="project-image-container">
                         <div class="project-overlay">
@@ -176,7 +170,7 @@
                         <div class="project-links">
                             <a href="https://colab.research.google.com/drive/15jfze8Shnuies_qxIkb6ZC0qO6HCVIZ4?usp=sharing" 
                                class="project-link" target="_blank">
-                                <span>View Code</span>
+                                <span>View on GitHub</span>
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                                     <polyline points="15 3 21 3 21 9"></polyline>
@@ -187,7 +181,6 @@
                     </div>
                 </div>
 
-                <!-- プロジェクト2: 猫サッカーゲーム -->
                 <div class="project-card featured">
                     <div class="featured-badge">Featured Project</div>
                     <div class="project-content-full">
@@ -257,11 +250,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- JavaScript セクション -->
                 <div class="project-card featured">
                     <div class="featured-badge">Featured Project</div>
                     <div class="project-content-full">
@@ -294,20 +283,51 @@
                         <div class="project-gallery">
                             <div class="gallery-grid">
                                 <div class="gallery-item-large">
-                                    <img src="soccer_2.png" alt="ゲームスタート画面">
-                                    <div class="gallery-caption">ゲームスタート画面</div>
+                                    <img src="Java.png" alt="javaScript非同期処理の解説の最初の画面">
+                                    <div class="gallery-caption">javaScript非同期処理の解説の最初の画面</div>
                                 </div>
-                                <div class="gallery-item-small">
-                                    <img src="soccer_1.png" alt="プレイ中">
-                                    <div class="gallery-caption">ボール移動</div>
-                                </div>
-                                <div class="gallery-item-small">
-                                    <img src="soccer_3.png" alt="得点シーン">
-                                    <div class="gallery-caption">得点シーン</div>
-                                </div>
-                                <div class="gallery-item-small">
-                                    <img src="soccer_4.png" alt="勝利画面">
-                                    <div class="gallery-caption">勝利画面</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card featured">
+                    <div class="featured-badge">Featured Project</div>
+                    <div class="project-content-full">
+                        <div class="project-info">
+                            <h3>🚀 Next.js Modern Blog</h3>
+                            <p class="project-description-large">
+                                Next.js 15 (App Router) と Prisma を活用した、TypeScript製のフルスタックブログアプリケーションです。
+                                React Server Components による高速な動作と、Supabase (PostgreSQL) によるデータ管理を実現。
+                                リアルタイム検索機能や動的OGP画像生成、Framer Motionによる滑らかなアニメーションなど、最新のフロントエンド技術を網羅しています。
+                            </p>
+                            
+                            <div class="project-tech-stack">
+                                <span class="tech-badge">Next.js 15</span>
+                                <span class="tech-badge">TypeScript</span>
+                                <span class="tech-badge">Supabase</span>
+                                <span class="tech-badge">Prisma</span>
+                                <span class="tech-badge">Tailwind CSS</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="https://github.com/teru0707/teru.webapp" 
+                                   class="project-link primary" target="_blank">
+                                    <span>View on GitHub</span>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-gallery">
+                            <div class="gallery-grid">
+                                <div class="gallery-item-large">
+                                    <img src="TypeScript.png" alt="Blog Top Page">
+                                    <div class="gallery-caption">Modern Mesh Gradient UI</div>
                                 </div>
                             </div>
                         </div>
@@ -317,7 +337,6 @@
         </div>
     </section>
 
-    <!-- Skills セクション -->
     <section id="skills" class="section">
         <div class="container">
             <h2 class="section-title">
@@ -450,7 +469,6 @@
         </div>
     </section>
 
-    <!-- Contact セクション -->
     <section id="contact" class="section contact-section">
         <div class="container">
             <h2 class="section-title">
@@ -458,31 +476,29 @@
                 Get In Touch
             </h2>
 
-                <div class="contact-cards">
-                    <div class="contact-card">
-                        <div class="contact-icon">📧</div>
-                        <h4>Email</h4>
-                        <p>お問い合わせはメールで   ro23089l@st.omu.ac.jp</p>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-icon">💼</div>
-                        <h4>GitHub</h4>
-                        <p>プロジェクトをチェック</p>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-icon">🎓</div>
-                        <h4>School</h4>
-                        <p>大阪公立大学工業高専</p>
-                    </div>
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h4>Email</h4>
+                    <p>お問い合わせはメールで  ro23089l@st.omu.ac.jp</p>
+                </div>
+                <a href="https://github.com/teru0707" target="_blank" class="contact-card link-card">
+                    <div class="contact-icon">💼</div>
+                    <h4>GitHub</h4>
+                    <p>プロジェクトをチェック</p>
+                </a>
+                <div class="contact-card">
+                    <div class="contact-icon">🎓</div>
+                    <h4>School</h4>
+                    <p>大阪公立大学工業高等専門学校</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- フッター -->
     <footer class="footer">
         <div class="footer-content">
-            <p>© 2025 鳥谷尾晃暉 (Teruki Toyao) - All Rights Reserved</p>
+            <p>© 2026 鳥谷尾晃暉 (Teruki Toyao) - All Rights Reserved</p>
             <p class="footer-subtitle">Designed & Built with passion 🚀</p>
         </div>
     </footer>
