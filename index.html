@@ -3,506 +3,395 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>鳥谷尾晃暉 - Portfolio</title>
+    <title>鳥谷尾晃暉 | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <div class="particles-container" id="particles"></div>
 
-    <nav class="navbar">
-        <div class="nav-content">
-            <div class="logo">Teruki Toyao</div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+    <!-- ナビゲーション -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#home" class="nav-logo">T.Toyao</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
             </ul>
+            <button class="hamburger" id="hamburger" aria-label="menu">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </nav>
 
-    <section id="home" class="hero-section">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="glitch" data-text="鳥谷尾晃暉">鳥谷尾晃暉</h1>
-                <p class="typing-text">Student Developer & Soccer Captain</p>
-                <div class="hero-tags">
-                    <span class="tag">💻 Programming</span>
-                    <span class="tag">⚽ Soccer</span>
-                    <span class="tag">🎮 Game Dev</span>
-                </div>
-                <div class="cta-buttons">
-                    <a href="#projects" class="btn-primary">
-                        <span>View Projects</span>
-                        <div class="btn-glow"></div>
-                    </a>
-                    <a href="#contact" class="btn-secondary">
-                        <span>Contact Me</span>
-                    </a>
-                </div>
+    <!-- モバイルメニュー -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#about" class="mobile-link">About</a></li>
+            <li><a href="#projects" class="mobile-link">Projects</a></li>
+            <li><a href="#skills" class="mobile-link">Skills</a></li>
+            <li><a href="#contact" class="mobile-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- ヒーロー -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="hero-dot-grid"></div>
+        </div>
+        <div class="hero-inner">
+            <div class="hero-label reveal">
+                <span class="dot"></span> Available for internship / full-time
             </div>
-            <div class="hero-visual">
-                <div class="floating-card card-1">
-                    <div class="card-content">
-                        <span class="emoji">🏫</span>
-                        <p>大阪公立大学<br>工業高等専門学校</p>
-                    </div>
-                </div>
-                <div class="floating-card card-2">
-                    <div class="card-content">
-                        <span class="emoji">👨‍💻</span>
-                        <p>知能情報コース<br>2I クラス総代</p>
-                        <p>知能情報コース<br>3I クラス総代</p>
-                        <p>知能情報コース<br>4I クラス総代</p>
-                    </div>
-                </div>
-                <div class="floating-card card-3">
-                    <div class="card-content">
-                        <span class="emoji">⚽</span>
-                        <p>U-18サッカー部<br>キャプテン</p>
-                    </div>
-                </div>
+            <h1 class="hero-name reveal">
+                鳥谷尾<br><em>晃暉</em>
+            </h1>
+            <p class="hero-en reveal">Teruki Toyao</p>
+            <p class="hero-desc reveal">
+                大阪公立大学工業高等専門学校 知能情報コース在籍。<br>
+                Python・Unity・Web技術を軸に、実用的なアプリ開発に取り組むStudent Developer。
+                U-18サッカー部キャプテンとして、技術とリーダーシップを両立してきました。
+            </p>
+            <div class="hero-actions reveal">
+                <a href="#projects" class="btn-primary">プロジェクトを見る</a>
+                <a href="#contact" class="btn-outline">コンタクト</a>
             </div>
         </div>
-        <div class="scroll-indicator">
-            <div class="mouse"></div>
+        <div class="hero-side">
+            <div class="side-card reveal-right">
+                <div class="side-card-label">School</div>
+                <div class="side-card-value">大阪公立大学<br>工業高等専門学校</div>
+            </div>
+            <div class="side-card reveal-right" style="--delay:0.15s">
+                <div class="side-card-label">Course</div>
+                <div class="side-card-value">知能情報コース<br>4I クラス総代</div>
+            </div>
+            <div class="side-card reveal-right" style="--delay:0.3s">
+                <div class="side-card-label">Activity</div>
+                <div class="side-card-value">U-18 Soccer<br>Captain</div>
+            </div>
+        </div>
+        <div class="scroll-hint">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
         </div>
     </section>
 
+    <!-- About -->
     <section id="about" class="section">
         <div class="container">
-            <h2 class="section-title">
-                <span class="title-number">01.</span>
-                About Me
-            </h2>
-            
+            <div class="section-label reveal">01 — About</div>
             <div class="about-grid">
-                <div class="about-text">
-                    <p class="intro-text">
-                        大阪公立大学工業高等専門学校で学ぶ、プログラミングとサッカーに情熱を注ぐ学生です。
-                        技術と創造性を融合させ、実用的なアプリケーションの開発に取り組んでいます。
+                <div class="about-left">
+                    <h2 class="section-title reveal">
+                        技術と人間力を<br>兼ね備えた開発者
+                    </h2>
+                    <p class="about-text reveal">
+                        プログラミングとサッカーという二つのフィールドで、常に高い目標を掲げて取り組んできました。
+                        コース配属後すぐに知能情報の専門知識を習得し、2・3・4年と連続してクラス総代を務めました。
+                        U-18サッカー部では2024年9月にキャプテンに就任し、チームをまとめる経験を積んでいます。
                     </p>
-                    
-                    <div class="stats-grid">
-                        <div class="stat-card">
-                            <div class="stat-number">2024</div>
-                            <div class="stat-label">Current Year</div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-number">5+</div>
+                    <p class="about-text reveal">
+                        プログラミングでは実際に動くものを作ることにこだわり、じゃんけんゲームから始まりUnityでのゲーム開発、
+                        Next.jsを使ったフルスタックWebアプリまで幅広く経験してきました。
+                    </p>
+                    <div class="about-stats reveal">
+                        <div class="stat">
+                            <div class="stat-num">5+</div>
                             <div class="stat-label">Projects</div>
                         </div>
-                        <div class="stat-card">
-                            <div class="stat-number">10+</div>
+                        <div class="stat">
+                            <div class="stat-num">10+</div>
                             <div class="stat-label">Technologies</div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="timeline-container">
-                    <div class="timeline-line"></div>
-                    <div class="timeline-item" data-year="2023.03">
-                        <div class="timeline-content">
-                            <h3>四條畷学園中学校 卒業</h3>
-                            <p>中学校生活を終え、新たなステージへ</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item" data-year="2023.04">
-                        <div class="timeline-content">
-                            <h3>大阪公立大学工業高等専門学校 入学</h3>
-                            <p>サッカー部に入部し、技術と体力の両立を目指す</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item" data-year="2024.04">
-                        <div class="timeline-content">
-                            <h3>知能情報コース配属 (2I)</h3>
-                            <p>専門的なプログラミング学習がスタート</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item" data-year="2024.09">
-                        <div class="timeline-content">
-                            <h3>U-18サッカー部 キャプテン就任</h3>
-                            <p>リーダーシップを発揮し、チームを牽引</p>
+                        <div class="stat">
+                            <div class="stat-num">3年</div>
+                            <div class="stat-label">クラス総代</div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="achievement-badge">
-                <div class="badge-icon">🏆</div>
-                <div class="badge-text">
-                    <h4>2I,3I,4I クラス総代</h4>
-                    <p>学業とリーダーシップの両立</p>
+                <div class="about-right">
+                    <div class="timeline reveal-right">
+                        <div class="tl-item">
+                            <div class="tl-year">2023.03</div>
+                            <div class="tl-content">
+                                <h4>四條畷学園中学校 卒業</h4>
+                                <p>中学校生活を終え、高専へ進学</p>
+                            </div>
+                        </div>
+                        <div class="tl-item">
+                            <div class="tl-year">2023.04</div>
+                            <div class="tl-content">
+                                <h4>大阪公立大学工業高等専門学校 入学</h4>
+                                <p>サッカー部に入部。技術と体力の両立を目指す</p>
+                            </div>
+                        </div>
+                        <div class="tl-item">
+                            <div class="tl-year">2024.04</div>
+                            <div class="tl-content">
+                                <h4>知能情報コース配属 (2I)</h4>
+                                <p>専門的なプログラミング学習スタート。クラス総代に選出</p>
+                            </div>
+                        </div>
+                        <div class="tl-item">
+                            <div class="tl-year">2024.09</div>
+                            <div class="tl-content">
+                                <h4>U-18サッカー部 キャプテン就任</h4>
+                                <p>チームリーダーとしてチームを牽引</p>
+                            </div>
+                        </div>
+                        <div class="tl-item current">
+                            <div class="tl-year">現在</div>
+                            <div class="tl-content">
+                                <h4>4I クラス総代（3年連続）</h4>
+                                <p>Next.js・Prismaなど最新技術を学びながら開発継続中</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="section projects-section">
+    <!-- Projects -->
+    <section id="projects" class="section bg-subtle">
         <div class="container">
-            <h2 class="section-title">
-                <span class="title-number">02.</span>
-                Featured Projects
-            </h2>
+            <div class="section-label reveal">02 — Projects</div>
+            <h2 class="section-title reveal">制作物</h2>
 
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image-container">
-                        <div class="project-overlay">
-                            <span class="project-tech">Python</span>
-                            <span class="project-tech">Google Colab</span>
-                        </div>
-                        <div class="project-icon">🎮</div>
-                    </div>
-                    <div class="project-content">
-                        <h3>じゃんけんゲーム</h3>
-                        <p class="project-description">
-                            コンピュータと対戦するインタラクティブなじゃんけんゲーム。
-                            ポイントシステムと星の描画機能を実装。
-                        </p>
-                        <div class="project-features">
-                            <span class="feature">✓ 勝敗判定システム</span>
-                            <span class="feature">✓ ポイント管理</span>
-                            <span class="feature">✓ ビジュアル描画</span>
-                            <span class="feature">✓ リプレイ機能</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://colab.research.google.com/drive/15jfze8Shnuies_qxIkb6ZC0qO6HCVIZ4?usp=sharing" 
-                               class="project-link" target="_blank">
-                                <span>View on GitHub</span>
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15 3 21 3 21 9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                </svg>
-                            </a>
+            <!-- Featured: 猫サッカーゲーム -->
+            <div class="project-featured reveal">
+                <div class="pf-info">
+                    <div class="pf-tag">Featured · Unity / C#</div>
+                    <h3>⚽ 猫サッカーゲーム</h3>
+                    <p>
+                        2024年高専祭で発表したUnityベースの2人対戦型サッカーゲーム。
+                        猫キャラクターを操作し、リアルタイムで対戦できます。ボールの物理演算・スコアシステム・
+                        勝敗判定を実装し、Gitを使ったバージョン管理も行いました。
+                    </p>
+                    <div class="pf-meta">
+                        <div class="pf-controls">
+                            <div class="ctrl"><span class="ctrl-key">Player 1</span><span>W / S で上下移動</span></div>
+                            <div class="ctrl"><span class="ctrl-key">Player 2</span><span>↑ / ↓ で上下移動</span></div>
+                            <div class="ctrl"><span class="ctrl-key">Reset</span><span>R キーでリセット</span></div>
                         </div>
                     </div>
+                    <div class="pf-tags">
+                        <span class="ptag">Unity</span>
+                        <span class="ptag">C#</span>
+                        <span class="ptag">Git</span>
+                        <span class="ptag">GitHub</span>
+                    </div>
+                    <a href="https://github.com/teru0707/Gamemake" target="_blank" class="btn-primary">
+                        GitHub で見る →
+                    </a>
                 </div>
-
-                <div class="project-card featured">
-                    <div class="featured-badge">Featured Project</div>
-                    <div class="project-content-full">
-                        <div class="project-info">
-                            <h3>⚽ 猫サッカーゲーム</h3>
-                            <p class="project-description-large">
-                                2024年高専祭で発表したUnityベースの2人対戦型サッカーゲーム。
-                                猫のキャラクターを操作し、リアルタイムで対戦できる本格的なゲームです。
-                                ボールの物理演算、スコアシステム、勝敗判定など、多数の機能を実装しました。
-                            </p>
-                            
-                            <div class="game-controls">
-                                <h4>🎮 操作方法</h4>
-                                <div class="controls-grid">
-                                    <div class="control-item">
-                                        <span class="control-key">Player 1</span>
-                                        <span class="control-desc">W / S で上下移動</span>
-                                    </div>
-                                    <div class="control-item">
-                                        <span class="control-key">Player 2</span>
-                                        <span class="control-desc">↑ / ↓ で上下移動</span>
-                                    </div>
-                                    <div class="control-item">
-                                        <span class="control-key">Reset</span>
-                                        <span class="control-desc">R キーでリセット</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="project-tech-stack">
-                                <span class="tech-badge">Unity</span>
-                                <span class="tech-badge">C#</span>
-                                <span class="tech-badge">Git</span>
-                                <span class="tech-badge">GitHub</span>
-                            </div>
-
-                            <div class="project-links">
-                                <a href="https://github.com/teru0707/Gamemake" 
-                                   class="project-link primary" target="_blank">
-                                    <span>View on GitHub</span>
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="project-gallery">
-                            <div class="gallery-grid">
-                                <div class="gallery-item-large">
-                                    <img src="soccer_2.png" alt="ゲームスタート画面">
-                                    <div class="gallery-caption">ゲームスタート画面</div>
-                                </div>
-                                <div class="gallery-item-small">
-                                    <img src="soccer_1.png" alt="プレイ中">
-                                    <div class="gallery-caption">ボール移動</div>
-                                </div>
-                                <div class="gallery-item-small">
-                                    <img src="soccer_3.png" alt="得点シーン">
-                                    <div class="gallery-caption">得点シーン</div>
-                                </div>
-                                <div class="gallery-item-small">
-                                    <img src="soccer_4.png" alt="勝利画面">
-                                    <div class="gallery-caption">勝利画面</div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="pf-gallery">
+                    <div class="gallery-main">
+                        <img src="soccer_2.png" alt="ゲームスタート画面">
+                        <div class="gallery-caption">ゲームスタート画面</div>
                     </div>
-                </div>
-
-                <div class="project-card featured">
-                    <div class="featured-badge">Featured Project</div>
-                    <div class="project-content-full">
-                        <div class="project-info">
-                            <h3>JavaScript非同期処理の基礎と実践の解説</h3>
-                            <p class="project-description-large">
-                                JavaScriptの非同期処理について、基本的な概念から実践的なコード例までを解説するプロジェクト。
-                                コールバック関数、Promise、async/awaitなどの非同期処理の手法をわかりやすく説明し、実際のコード例を通じて理解を深めます。
-                                このプロジェクトは、私のJavaScriptの理解を深めるために作成され、非同期処理の重要性と実装方法を学ぶことができます。
-                            </p>
-                            
-                            <div class="project-tech-stack">
-                                <span class="tech-badge">JavaScript</span>
-                                <span class="tech-badge">HTML</span>
-                                <span class="tech-badge">CSS</span>
-                                <span class="tech-badge">Git</span>
-                            </div>
-
-                            <div class="project-links">
-                                <a href="https://github.com/teru0707/information3_kadai4" 
-                                   class="project-link primary" target="_blank">
-                                    <span>View on GitHub</span>
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                                    </svg>
-                                </a>
-                            </div>
+                    <div class="gallery-sub">
+                        <div class="gallery-sm">
+                            <img src="soccer_1.png" alt="ボール移動">
+                            <div class="gallery-caption">ボール移動</div>
                         </div>
-
-                        <div class="project-gallery">
-                            <div class="gallery-grid">
-                                <div class="gallery-item-large">
-                                    <img src="Java.png" alt="javaScript非同期処理の解説の最初の画面">
-                                    <div class="gallery-caption">javaScript非同期処理の解説の最初の画面</div>
-                                </div>
-                            </div>
+                        <div class="gallery-sm">
+                            <img src="soccer_3.png" alt="得点シーン">
+                            <div class="gallery-caption">得点シーン</div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="project-card featured">
-                    <div class="featured-badge">Featured Project</div>
-                    <div class="project-content-full">
-                        <div class="project-info">
-                            <h3>🚀 Next.js Modern Blog</h3>
-                            <p class="project-description-large">
-                                Next.js 15 (App Router) と Prisma を活用した、TypeScript製のフルスタックブログアプリケーションです。
-                                React Server Components による高速な動作と、Supabase (PostgreSQL) によるデータ管理を実現。
-                                リアルタイム検索機能や動的OGP画像生成、Framer Motionによる滑らかなアニメーションなど、最新のフロントエンド技術を網羅しています。
-                            </p>
-                            
-                            <div class="project-tech-stack">
-                                <span class="tech-badge">Next.js 15</span>
-                                <span class="tech-badge">TypeScript</span>
-                                <span class="tech-badge">Supabase</span>
-                                <span class="tech-badge">Prisma</span>
-                                <span class="tech-badge">Tailwind CSS</span>
-                            </div>
-
-                            <div class="project-links">
-                                <a href="https://github.com/teru0707/teru.webapp" 
-                                   class="project-link primary" target="_blank">
-                                    <span>View on GitHub</span>
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                        <polyline points="15 3 21 3 21 9"></polyline>
-                                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="project-gallery">
-                            <div class="gallery-grid">
-                                <div class="gallery-item-large">
-                                    <img src="TypeScript.png" alt="Blog Top Page">
-                                    <div class="gallery-caption">Modern Mesh Gradient UI</div>
-                                </div>
-                            </div>
+                        <div class="gallery-sm">
+                            <img src="soccer_4.png" alt="勝利画面">
+                            <div class="gallery-caption">勝利画面</div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Project Cards -->
+            <div class="projects-row">
+
+                <div class="project-card reveal">
+                    <div class="pc-img pc-blog">
+                        <span class="pc-icon">🚀</span>
+                    </div>
+                    <div class="pc-body">
+                        <div class="pc-tags">
+                            <span class="ptag">Next.js 15</span>
+                            <span class="ptag">TypeScript</span>
+                            <span class="ptag">Supabase</span>
+                        </div>
+                        <h3>Next.js Modern Blog</h3>
+                        <p>
+                            Next.js 15 App Router + Prisma + Supabase (PostgreSQL) によるフルスタックブログ。
+                            React Server Components・リアルタイム検索・動的OGP画像生成・Framer Motionアニメーションを実装。
+                        </p>
+                        <a href="https://github.com/teru0707/teru.webapp" target="_blank" class="card-link">GitHub で見る →</a>
+                    </div>
+                </div>
+
+                <div class="project-card reveal" style="--delay:0.1s">
+                    <div class="pc-img pc-js">
+                        <span class="pc-icon">📖</span>
+                    </div>
+                    <div class="pc-body">
+                        <div class="pc-tags">
+                            <span class="ptag">JavaScript</span>
+                            <span class="ptag">HTML</span>
+                            <span class="ptag">CSS</span>
+                        </div>
+                        <h3>JS 非同期処理 解説サイト</h3>
+                        <p>
+                            コールバック・Promise・async/awaitを図解付きで解説するWebサイト。
+                            自身の学習内容をアウトプットすることを目的に制作しました。
+                        </p>
+                        <a href="https://github.com/teru0707/information3_kadai4" target="_blank" class="card-link">GitHub で見る →</a>
+                    </div>
+                </div>
+
+                <div class="project-card reveal" style="--delay:0.2s">
+                    <div class="pc-img pc-py">
+                        <span class="pc-icon">🎮</span>
+                    </div>
+                    <div class="pc-body">
+                        <div class="pc-tags">
+                            <span class="ptag">Python</span>
+                            <span class="ptag">Google Colab</span>
+                        </div>
+                        <h3>じゃんけんゲーム</h3>
+                        <p>
+                            Pythonで実装したコンピュータ対戦のじゃんけんゲーム。
+                            勝敗判定・ポイント管理・星の描画・リプレイ機能を含む。
+                        </p>
+                        <a href="https://colab.research.google.com/drive/15jfze8Shnuies_qxIkb6ZC0qO6HCVIZ4?usp=sharing" target="_blank" class="card-link">Colab で見る →</a>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
 
+    <!-- Skills -->
     <section id="skills" class="section">
         <div class="container">
-            <h2 class="section-title">
-                <span class="title-number">03.</span>
-                Skills & Technologies
-            </h2>
+            <div class="section-label reveal">03 — Skills</div>
+            <h2 class="section-title reveal">技術スタック</h2>
 
-            <div class="skills-container">
-                <div class="skill-category">
-                    <div class="category-header">
-                        <span class="category-icon">💻</span>
-                        <h3>Programming Languages</h3>
-                    </div>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Python</span>
-                                <span class="skill-level">Advanced</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">C / C++ (Arduino)</span>
-                                <span class="skill-level">Intermediate</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 70%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Scratch</span>
-                                <span class="skill-level">Intermediate</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%"></div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="skills-grid">
+                <div class="skill-group reveal">
+                    <h3><span class="skill-icon">💻</span> Programming Languages</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <div class="sl-top"><span>Python</span><span class="sl-lv">Advanced</span></div>
+                            <div class="sl-bar"><div class="sl-fill" style="--w:85%"></div></div>
+                        </li>
+                        <li>
+                            <div class="sl-top"><span>C / C++ (Arduino)</span><span class="sl-lv">Intermediate</span></div>
+                            <div class="sl-bar"><div class="sl-fill" style="--w:70%"></div></div>
+                        </li>
+                        <li>
+                            <div class="sl-top"><span>JavaScript / TypeScript</span><span class="sl-lv">Intermediate</span></div>
+                            <div class="sl-bar"><div class="sl-fill" style="--w:65%"></div></div>
+                        </li>
+                        <li>
+                            <div class="sl-top"><span>C# (Unity)</span><span class="sl-lv">Intermediate</span></div>
+                            <div class="sl-bar"><div class="sl-fill" style="--w:68%"></div></div>
+                        </li>
+                    </ul>
                 </div>
 
-                <div class="skill-category">
-                    <div class="category-header">
-                        <span class="category-icon">🛠️</span>
-                        <h3>Development Tools</h3>
-                    </div>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Git / GitHub</span>
-                                <span class="skill-level">Advanced</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">VSCode</span>
-                                <span class="skill-level">Advanced</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Unity</span>
-                                <span class="skill-level">Intermediate</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 70%"></div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="skill-group reveal" style="--delay:0.1s">
+                    <h3><span class="skill-icon">🛠</span> Frameworks & Tools</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <div class="sl-top"><span>Git / GitHub</span><span class="sl-lv">Advanced</span></div>
+                            <div class="sl-bar"><div class="sl-fill" style="--w:80%"></div></div>
+                        </li>
+                        <li>
+                            <div class="sl-top"><span>Unity</span><span class="sl-lv">Intermediate</span></div>
+                            <div class="sl-bar"><div class="sl-fill" style="--w:70%"></div></div>
+                        </li>
+                        <li>
+                            <div class="sl-top"><span>Next.js / React</span><span class="sl-lv">Intermediate</span></div>
+                            <div class="sl-bar"><div class="sl-fill" style="--w:60%"></div></div>
+                        </li>
+                        <li>
+                            <div class="sl-top"><span>VS Code</span><span class="sl-lv">Advanced</span></div>
+                            <div class="sl-bar"><div class="sl-fill" style="--w:85%"></div></div>
+                        </li>
+                    </ul>
                 </div>
 
-                <div class="skill-category">
-                    <div class="category-header">
-                        <span class="category-icon">⚙️</span>
-                        <h3>Hardware & IoT</h3>
-                    </div>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Arduino</span>
-                                <span class="skill-level">Intermediate</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Raspberry Pi</span>
-                                <span class="skill-level">Intermediate</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 70%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Ambient / Real VNC</span>
-                                <span class="skill-level">Basic</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 65%"></div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="skill-group reveal" style="--delay:0.2s">
+                    <h3><span class="skill-icon">⚙️</span> Hardware & IoT</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <div class="sl-top"><span>Arduino</span><span class="sl-lv">Intermediate</span></div>
+                            <div class="sl-bar"><div class="sl-fill" style="--w:75%"></div></div>
+                        </li>
+                        <li>
+                            <div class="sl-top"><span>Raspberry Pi</span><span class="sl-lv">Intermediate</span></div>
+                            <div class="sl-bar"><div class="sl-fill" style="--w:70%"></div></div>
+                        </li>
+                        <li>
+                            <div class="sl-top"><span>Ambient / RealVNC</span><span class="sl-lv">Basic</span></div>
+                            <div class="sl-bar"><div class="sl-fill" style="--w:55%"></div></div>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="tech-cloud">
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">Git</span>
-                <span class="tech-tag">Unity</span>
-                <span class="tech-tag">Arduino</span>
-                <span class="tech-tag">VSCode</span>
-                <span class="tech-tag">Raspberry Pi</span>
-                <span class="tech-tag">C/C++</span>
-                <span class="tech-tag">GitHub</span>
-                <span class="tech-tag">Scratch</span>
-                <span class="tech-tag">IoT</span>
+            <!-- Tech Tags -->
+            <div class="tech-tags reveal">
+                <span>Python</span><span>JavaScript</span><span>TypeScript</span><span>C/C++</span>
+                <span>C#</span><span>Unity</span><span>Next.js</span><span>React</span>
+                <span>Prisma</span><span>Supabase</span><span>Git</span><span>GitHub</span>
+                <span>Arduino</span><span>Raspberry Pi</span><span>VS Code</span>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="section contact-section">
+    <!-- Contact -->
+    <section id="contact" class="section bg-subtle">
         <div class="container">
-            <h2 class="section-title">
-                <span class="title-number">04.</span>
-                Get In Touch
-            </h2>
+            <div class="section-label reveal">04 — Contact</div>
+            <h2 class="section-title reveal">お問い合わせ</h2>
+            <p class="contact-intro reveal">
+                インターンシップ・就職に関するお声がけ、お気軽にご連絡ください。
+            </p>
 
-            <div class="contact-cards">
-                <div class="contact-card">
-                    <div class="contact-icon">📧</div>
-                    <h4>Email</h4>
-                    <p>お問い合わせはメールで  ro23089l@st.omu.ac.jp</p>
+            <div class="contact-grid">
+                <div class="contact-card reveal">
+                    <div class="cc-icon">📧</div>
+                    <div class="cc-label">Email</div>
+                    <div class="cc-value">ro23089l@st.omu.ac.jp</div>
                 </div>
-                <a href="https://github.com/teru0707" target="_blank" class="contact-card link-card">
-                    <div class="contact-icon">💼</div>
-                    <h4>GitHub</h4>
-                    <p>プロジェクトをチェック</p>
+                <a href="https://github.com/teru0707" target="_blank" class="contact-card reveal" style="--delay:0.1s">
+                    <div class="cc-icon">💻</div>
+                    <div class="cc-label">GitHub</div>
+                    <div class="cc-value">github.com/teru0707</div>
                 </a>
-                <div class="contact-card">
-                    <div class="contact-icon">🎓</div>
-                    <h4>School</h4>
-                    <p>大阪公立大学工業高等専門学校</p>
+                <div class="contact-card reveal" style="--delay:0.2s">
+                    <div class="cc-icon">🎓</div>
+                    <div class="cc-label">School</div>
+                    <div class="cc-value">大阪公立大学<br>工業高等専門学校</div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
-        <div class="footer-content">
-            <p>© 2026 鳥谷尾晃暉 (Teruki Toyao) - All Rights Reserved</p>
-            <p class="footer-subtitle">Designed & Built with passion 🚀</p>
+        <div class="container">
+            <div class="footer-inner">
+                <span class="footer-name">鳥谷尾晃暉 (Teruki Toyao)</span>
+                <span class="footer-copy">© 2026 All Rights Reserved</span>
+            </div>
         </div>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="projects.js"></script>
 </body>
 </html>
